@@ -21,7 +21,8 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Routes
-
+const requirement = require("./routes/requirmentRoutes")
+app.use("/api/v1",requirement)
 
 
 
