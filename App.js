@@ -1,7 +1,9 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const cors = require("cors");
 const dotenv = require("dotenv");
+const cors = require('cors');
+//  config
+dotenv.config({path:"config/.env"});
 
 
 const PORT = process.env.PORT_NUMBER || 5000 ; //Port number
@@ -9,9 +11,6 @@ const PORT = process.env.PORT_NUMBER || 5000 ; //Port number
 const connectDatabase = require("./config/database");
 
 const app = express();
-
-//  config
-dotenv.config({path:"config/.env"});
 
 // connecting database
 connectDatabase();
@@ -24,6 +23,8 @@ app.use(cors());
 const requirement = require("./routes/requirmentRoutes")
 app.use("/api/v1",requirement)
 
+const user = require("./routes/userRoutes")
+app.use("/api/v1/users",user)
 
 
 app.listen(PORT,()=>{
