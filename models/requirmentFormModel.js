@@ -24,7 +24,7 @@ const requirementSchema = new mongoose.Schema(
      file:{
         type:String,
      },
-     isAppprove:{
+     isApprove:{
         type:Boolean,
         default:false
      }

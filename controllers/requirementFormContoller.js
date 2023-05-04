@@ -46,11 +46,15 @@ exports.getRequirementDetails = async(req,res,next)=>{
     try {
         const requirement = await Requirement.findById(req.params.id);
 
-        if (!requirement) {
-            return
-        }
+        res.status(200).json({
+            success:true,
+           requirement
+        })
     } catch (error) {
-        
+        res.status(400).json({
+            success:false,
+            message:error.message,
+        })
     }
 }
 
