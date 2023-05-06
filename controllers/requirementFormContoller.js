@@ -6,7 +6,7 @@ exports.createRequirement = async(req,res,next)=>{
     let requirement = new Requirement({
         name:req.body.name,
         area:req.body.area,
-        instituion:req.body.instituion,
+        institution:req.body.institution,
         category:req.body.category,
         hours:req.body.hours,
     })
