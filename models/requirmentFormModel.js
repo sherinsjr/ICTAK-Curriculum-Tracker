@@ -9,7 +9,7 @@ const requirementSchema = new mongoose.Schema(
         type:String,
         required:true
      },
-     instituion:{
+     institution:{
         type:String,
         required:true
      },
