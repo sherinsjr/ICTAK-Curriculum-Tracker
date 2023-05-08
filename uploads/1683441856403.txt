@@ -1,0 +1,56 @@
+ ICTAK Curriculum Tracker
+Overview: Create a Curriculum Tracker for ICTAK.
+
+Requirements :
+
+* Sign Up and Login Modules for Faculty.
+* Login module for Admin with predefined credentials.
+
+ADMIN
+
+# Admin must be able to add requirements of curriculum through Requirement form. The requirement form must contain the following fields
+
+1.Name of Requirement
+2.Area where training is required(Dropdown)
+FSD
+ML-AI
+DSA
+RPA
+ST
+CSA
+3.Institution/Corporate office from where the requirement came
+4.Category of Requirement(Dropdown)
+Retail
+Academic
+Corporate
+Govt
+5.No: of hours of training
+
+6.Upload file option for some references.
+# Once the curriculum is submitted, Admin must approve it and thus it will be made available in the Admin and Faculty Dashboard.
+# Admin must have overall CRUD operations on the curriculum created by the Faculty.
+# Search criteria must be provided for Admin with search options as given below:
+
+Area of training
+Name of training
+Category of Requirement
+Institution
+
+FACULTY
+
+# Faculty must be able to view the requirements from the Admin side.
+# Faculty must be able to respond to Admin requirement in a response form in the following format:
+Comments
+File upload(.pdf or .docx)
+
+# Faculty must be able to view all the past curriculum in his own dashboard 
+# Download option for curriculum must be provided
+# Search criteria must be provided for Faculty with search options as given below:
+
+Area of training
+Name of training
+Category of Requirement
+Institution
+
+# Faculty must be able to edit the submission made by him/her before approval from Admin.
+
