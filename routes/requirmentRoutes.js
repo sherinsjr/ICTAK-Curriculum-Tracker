@@ -23,6 +23,6 @@ router.route('/detail/:id').get(getRequirementDetails);
 router.route('/download/:id').get(downloadRequirementFile);
 
 // Delete Requirement --Admin
-router.route('requirement/:id').delete(deleteRequirement);
+router.route('/requirement/:id').delete(deleteRequirement);
 
 module.exports = router;

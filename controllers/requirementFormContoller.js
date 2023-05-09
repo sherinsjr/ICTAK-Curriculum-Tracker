@@ -69,7 +69,7 @@ exports.getRequirementDetails = async(req,res,next)=>{
 
 exports.deleteRequirement = async (req, res) => {
   try {
-    const {id} = req.params.id
+    const id = req.params.id
     const deletedData = await Requirement.findOneAndDelete({ _id: id });
 
     if (!deletedData) {
@@ -82,7 +82,7 @@ exports.deleteRequirement = async (req, res) => {
     res.status(200).json({
       success: true,
       message: "Requirement deleted successfully",
-      deletedData,
+      
     });
   } catch (error) {
     res.status(400).json({
